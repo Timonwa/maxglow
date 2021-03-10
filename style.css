@@ -1,6 +1,226 @@
-*{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* variables */
+  --section-container-margin: 0px 100px;
+  --section-container-padding: 50px 100px;
+  --main-bg: rgb(250, 250, 250);
+  --main-color: rgb(0, 0, 0);
+  --nav-bar-bg: rgb(250, 250, 250);
+  --nav-bar-bg-hover: rgb(245, 222, 179);
+  --nav-bar-bg-active: rgba(61, 153, 92, 0.9);
+  --nav-bar-color: rgb(61, 153, 92);
+  --nav-bar-height: 60px;
+  --header-overlay:  rgba(0, 0, 0, 0.596);
+  --header-color: rgb(61, 153, 92) ;
+  --company-bg: rgba(0, 0, 0, 0.59);
+  --company-color:  rgb(12, 243, 128);
+  --footer-bg: rgb(61, 153, 92);
+  --footer-color: rgb(0, 0, 0);
 }
-body{
-    margin: 70px;
-    font-size: 19px;
+/* reseting the links state to blace and no decoration */
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+/* h1 to h6 and p default size and line height */
+h1 {
+  font-size: 1.9rem;
+  line-height: 2.3rem;
+  text-align: center;
+  padding-bottom: 1.15rem;
+}
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  text-align: center;
+  padding-bottom: 0.9rem;
+}
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-align: center;
+  padding-bottom: 0.75rem;
+}
+h4 {
+  font-size: 0.95rem;
+  line-height: 1.2rem;
+  text-align: center;
+  padding-bottom: 0.6rem;
+}
+h5 {
+  font-size: 0.75rem;
+  line-height: 0.9rem;
+  text-align: center;
+  padding-bottom: 0.45rem;
+}
+h6 {
+  font-size: 0.6rem;
+  line-height: 0.75rem;
+  text-align: center;
+  padding-bottom: 0.37rem;
+}
+p {
+  line-height: 1.2rem;
+}
+/** to ensure that when you click on an id link, the header will not cover the  beginning of the content the id is pointing to */
+[id] {
+  scroll-margin-top: 5em;
+}
+/* body */
+body {
+  font-size: 19px;
+  background-color: var(--main-bg);
+  color: var(--main-color);
+}
+/* default margin for all the sections container */
+main,
+section.company-contact {
+  margin: var(--section-container-margin);
+}
+/* nav bar */
+nav {
+  background-color: var(--nav-bar-bg);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 0 40px;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 17px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: solid 2px var(--nav-bar-bg-active);
+  height: var(--nav-bar-height);
+}
+/* navbar subsections i.e. logo and nav-links */
+nav > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+/* navigation links */
+nav > .nav-links {
+  width: 550px;
+}
+/* the links minus the homepage button */
+nav > div > .nav-link {
+  color: var(--nav-bar-color);
+  padding: 20px 10px;
+}
+/* links on hover */
+nav > div > a:hover {
+  color: var(--nav-bar-bg-hover);
+  opacity: 0.7;
+}
+/* links when active */
+nav > div > a:active {
+  text-decoration: none;
+  background-color: var(--nav-bar-bg-active);
+}
+/* header */
+header {
+  background-image: url("img/ppl.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: var(--nav-bar-color);
+}
+/* color overlay on the header background image */
+header > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: inherit;
+  background-color: var(--header-overlay);
+  color: --he;
+}
+/* header paragraph */
+header h1 {
+  padding: 20px 30px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+/* all sections */
+main > section,
+.company-contact {
+  padding: var(--section-container-padding);
+}
+/* section about the company */
+.company-about {
+  background-color: rgb(250, 250, 250);
+}
+/* the sub companies container */
+.sub-companies > div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 50px 0;
+}
+/* each sub company */
+.sub-company {
+  height: 400px;
+  width: inherit;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+/* the third sub company */
+.genius {
+  background-image: url("img/img3.jpg");
+}
+.royalbeads {
+  background-image: url("img/img3.jpg");
+}
+.acwf {
+  margin-bottom: 0;
+  background-image: url("img/img2.jpg");
+}
+.sub-company {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+.sub-company > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  width: inherit;
+  height: inherit;
+  padding: 0 30px;
+  background-color: var(--company-overlay);
+  color: var(--company-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* footer */
+footer {
+  background-color: var(--footer-bg);
+  height: 100px;
+  text-align: center;padding: 20px;
 }
