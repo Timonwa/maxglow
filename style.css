@@ -4,23 +4,25 @@
   box-sizing: border-box;
 
   /* variables */
-  --section-container-margin: 0px 100px;
-  --section-container-padding: 50px 100px;
-  --main-bg: rgb(250, 250, 250);
+  --main-bg: rgb(238, 238, 238);
   --main-color: rgb(0, 0, 0);
   --nav-bar-bg: rgb(250, 250, 250);
-  --nav-bar-bg-hover: rgb(245, 222, 179);
-  --nav-bar-bg-active: rgba(61, 153, 92, 0.9);
   --nav-bar-color: rgb(61, 153, 92);
   --nav-bar-height: 60px;
-  --header-overlay:  rgba(0, 0, 0, 0.596);
-  --header-color: rgb(61, 153, 92) ;
-  --company-bg: rgba(0, 0, 0, 0.59);
-  --company-color:  rgb(12, 243, 128);
+  --nav-bar-bg-hover: rgb(245, 222, 179);
+  --nav-bar-bg-active: rgba(61, 153, 92, 0.9);
+  --section-container-margin: 0px 100px;
+  --section-container-padding: 50px 100px;
+  --header-color: rgb(61, 153, 92);
+  --header-bg-overlay: rgba(0, 0, 0, 0.596);
+  --company-color: rgb(12, 243, 128);
+  --company-bg-overlay: rgba(0, 0, 0, 0.59);
+  --sub-company-color: rgb(230, 227, 227);
+  --sub-company-bg: rgba(0, 0, 0, 0.596);
   --footer-bg: rgb(61, 153, 92);
   --footer-color: rgb(0, 0, 0);
 }
-/* reseting the links state to blace and no decoration */
+/* reseting the link states to black and no decoration */
 a,
 a:link,
 a:hover,
@@ -79,9 +81,9 @@ body {
   background-color: var(--main-bg);
   color: var(--main-color);
 }
-/* default margin for all the sections container */
-main,
-section.company-contact {
+/* default margin for the about container and contact container*/
+.company-about,
+.company-contact {
   margin: var(--section-container-margin);
 }
 /* nav bar */
@@ -90,8 +92,9 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 0 40px;
   justify-content: space-between;
+  height: var(--nav-bar-height);
+  padding: 0 40px;
   font-weight: bold;
   font-size: 17px;
   position: fixed;
@@ -99,18 +102,18 @@ nav {
   left: 0;
   right: 0;
   border-bottom: solid 2px var(--nav-bar-bg-active);
-  height: var(--nav-bar-height);
 }
-/* navbar subsections i.e. logo and nav-links */
+/* navbar subsections i.e. logo and nav-links containers */
 nav > div {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  letter-spacing: 0.1em;
 }
-/* navigation links */
+/* navigation links container */
 nav > .nav-links {
-  width: 550px;
+  width: 700px;
 }
 /* the links minus the homepage button */
 nav > div > .nav-link {
@@ -129,21 +132,20 @@ nav > div > a:active {
 }
 /* header */
 header {
-  background-image: url("img/ppl.jpg");
+  background-image: url("img/lanscape-buildings.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
   color: var(--nav-bar-color);
 }
-/* color overlay on the header background image */
+/* the div inside the header that has the background color overlay on image */
 header > div {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: inherit;
-  background-color: var(--header-overlay);
-  color: --he;
+  background-color: var(--header-bg-overlay);
 }
 /* header paragraph */
 header h1 {
@@ -154,73 +156,110 @@ header h1 {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
-/* all sections */
-main > section,
+/* company about and contact container */
+main > .company-about,
 .company-contact {
   padding: var(--section-container-padding);
 }
-/* section about the company */
+/* company about container  */
 .company-about {
-  background-color: rgb(250, 250, 250);
+  border-bottom: solid 1px grey;
 }
 /* the sub companies container */
+.sub-companies {
+  padding: 40px 0 70px;
+}
+/* the sub company section without its header */
 .sub-companies > div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 10px 50px 0;
 }
 /* each sub company */
 .sub-company {
-  height: 400px;
-  width: inherit;
-  margin-bottom: 40px;
+  width: 300px;
+  height: 300px;
+  margin: 0px 15px ;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+  box-shadow: 0px 3px 10px grey;
 }
-/* the third sub company */
-.genius {
-  background-image: url("img/img3.jpg");
-}
-.royalbeads {
-  background-image: url("img/img3.jpg");
-}
-.acwf {
-  margin-bottom: 0;
-  background-image: url("img/img2.jpg");
-}
-.sub-company {
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-}
-.sub-company > div {
+/* the div inside the sub compaineis container that carries the background overlay for the background image */
+.sub-company > a {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-weight: bold;
-  width: inherit;
-  height: inherit;
-  padding: 0 30px;
-  background-color: var(--company-overlay);
-  color: var(--company-color);
+  padding: 0 15px;
+  width: 300px;
+  height: 300px;
+  letter-spacing: 0.2em;
   border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  color: var(--sub-company-color);
+  background-color: var(--header-bg-overlay);
 }
-
+/* sub company link hover state */
+.sub-company:hover, .sub-company > a:hover{
+  height: 305px;
+  width: 305px;
+  box-shadow: 0 3px 15px grey;
+}
+/* genius company */
+.genius {
+  background-image: url(img/magazine.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* royal beads company */
+.royalbeads {
+  background-image: url(img/strings-of-beads.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* acwf company */
+.acwf {
+  background-image: url(img/charity-food-sharing.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* the name of the company */
+.sub-company p {
+  background-color: var(--header-bg-overlay);
+  font-weight: 600;
+  padding: 10px;
+}
+.sub-company p i{
+  font-size: 0.8em;
+  padding-left: 10px;
+}
 /* footer */
 footer {
   background-color: var(--footer-bg);
-  height: 100px;
-  text-align: center;padding: 20px;
+  /* height: 100px; */
+  text-align: center;
+  padding: 20px;
+}
+footer .contacts{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .contacts p{
+  padding: 0 10px 10px;
+}
+footer .contacts p:hover{
+  text-decoration: underline;
+}
+footer i{
+  margin-right: 10px;
 }
