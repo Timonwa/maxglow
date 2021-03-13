@@ -36,37 +36,37 @@ h1 {
   font-size: 1.9rem;
   line-height: 2.3rem;
   text-align: center;
-  padding-bottom: 1.15rem;
+  padding-bottom: 1rem;
 }
 h2 {
   font-size: 1.5rem;
   line-height: 1.8rem;
   text-align: center;
-  padding-bottom: 0.9rem;
+  padding-bottom: 0.5rem;
 }
 h3 {
   font-size: 1.2rem;
   line-height: 1.5rem;
   text-align: center;
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.3rem;
 }
 h4 {
   font-size: 0.95rem;
   line-height: 1.2rem;
   text-align: center;
-  padding-bottom: 0.6rem;
+  padding-bottom: 0.3rem;
 }
 h5 {
   font-size: 0.75rem;
   line-height: 0.9rem;
   text-align: center;
-  padding-bottom: 0.45rem;
+  padding-bottom: 0.3rem;
 }
 h6 {
   font-size: 0.6rem;
   line-height: 0.75rem;
   text-align: center;
-  padding-bottom: 0.37rem;
+  padding-bottom: 0.3rem;
 }
 p {
   line-height: 1.2rem;
@@ -122,10 +122,6 @@ nav a:link {
 nav > .logo > a {
   color: var(--nav-bar-color);
 }
-/* nav menu */
-div.menu {
-  display: none;
-}
 /* navigation links container */
 nav > .nav-links {
   width: 500px;
@@ -148,17 +144,22 @@ nav a:active {
 .sublink {
   position: absolute;
   width: 170px;
-  top: calc(var(--nav-bar-height) - 20px);
+  top: calc(var(--nav-bar-height) - 15px);
   right: 0;
   border: solid;
   text-align: center;
   display: none;
   background-color: var(--nav-bar-bg);
+  font-size: 14px;
 }
+.sublink:last-child {
+  right: -40px;
+}
+
 /* the sublinks anchor */
 .sublink a {
   display: block;
-  padding: 5px 0;
+  color: var(--nav-bar-color);
   border-bottom: solid 1px var(--nav-bar-color);
 }
 /* the last sublinks anchor */
@@ -166,7 +167,11 @@ nav a:active {
   border-bottom: none;
 }
 /* when you hover on the nav link, the sublink will become visible */
+.nav-link:hover{
+  color: var(--nav-bar-bg-hover);
+}
 .nav-link:hover > .sublink {
+  border: var(--nav-bar-bg);
   display: block;
 }
 /* header */
@@ -206,7 +211,7 @@ main > .company-about,
 }
 /* the sub companies container */
 .sub-companies {
-  padding: 40px 0 70px;
+  padding: 40px 0 50px;
 }
 /* the sub company section without its header */
 .sub-companies > div {
@@ -313,6 +318,9 @@ footer i {
     --section-container-margin: 0px 70px;
     --section-container-padding: 40px 50px;
   }
+  body {
+    font-size: 17px;
+  }
 }
 /* media query for smaller screen on tablet */
 @media screen and (max-width: 620px) {
@@ -320,17 +328,39 @@ footer i {
     --section-container-margin: 0px 40px;
     --section-container-padding: 25px 40px;
   }
-  body {
-    font-size: 18px;
-  }
   nav {
-    padding: 0 20px;
+    padding: 0 0px;
+    flex-direction: column;
+    height: 80px;
+    font-size: 14px;
+  }
+  nav > .logo {
+    align-items: center;
+    justify-content: center;
+  }
+  nav .nav-links {
+    height: 60px;
+    width: 100%;
+    justify-content: space-around;
+    border-top: solid 1px var(--nav-bar-color);
+  }
+  nav a:link {
+    padding: 10px 0;
+  }
+  .sublink {
+    top: 35px;
+  }
+  .sublink:last-child {
+    right: -10px;
   }
 }
 @media screen and (max-width: 470px) {
   * {
     --section-container-margin: 0px 20px;
-    --section-container-padding: 20px 10px;
+    --section-container-padding: 20px 10px 10px;
+  }
+  h2{
+    padding-bottom: 0.1rem;
   }
   body {
     font-size: 16px;
