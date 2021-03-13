@@ -185,6 +185,7 @@ header {
 /* the div inside the header that has the background color overlay on image */
 header > div {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
