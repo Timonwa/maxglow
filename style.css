@@ -144,7 +144,7 @@ nav a:active {
 .sublink {
   position: absolute;
   width: 170px;
-  top: calc(var(--nav-bar-height) - 15px);
+  top: calc(var(--nav-bar-height) - 30px);
   right: 0;
   border: solid;
   text-align: center;
@@ -169,9 +169,13 @@ nav a:active {
 /* when you hover on the nav link, the sublink will become visible */
 .nav-link:hover{
   color: var(--nav-bar-bg-hover);
+  display: block;
 }
 .nav-link:hover > .sublink {
   border: var(--nav-bar-bg);
+  display: block;
+}
+.nav-link> .sublink:hover{
   display: block;
 }
 /* header */
@@ -209,6 +213,7 @@ main > .company-about,
 /* company about container  */
 .company-about {
   border-bottom: solid 1px grey;
+  padding: 40px 0 40px;
 }
 /* the sub companies container */
 .sub-companies {
@@ -349,7 +354,7 @@ footer i {
     padding: 10px 0;
   }
   .sublink {
-    top: 35px;
+    top: 30px;
   }
   .sublink:last-child {
     right: -10px;
@@ -360,7 +365,7 @@ footer i {
     --section-container-margin: 0px 20px;
     --section-container-padding: 20px 10px 10px;
   }
-  h2{
+  h2 {
     padding-bottom: 0.1rem;
   }
   body {
