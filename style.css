@@ -19,7 +19,7 @@
   --company-bg-overlay: rgba(0, 0, 0, 0.59);
   --sub-company-color: rgb(230, 227, 227);
   --sub-company-bg: rgba(0, 0, 0, 0.596);
-  --footer-bg: rgb(61, 153, 92);
+  --footer-bg: rgb(56, 133, 82);
   --footer-color: rgb(0, 0, 0);
 }
 /* reseting the link states to black and no decoration */
@@ -86,7 +86,7 @@ body {
 .company-contact {
   margin: var(--section-container-margin);
 }
-/* nav bar */
+/* nav section */
 nav {
   background-color: var(--nav-bar-bg);
   display: flex;
@@ -103,32 +103,71 @@ nav {
   right: 0;
   border-bottom: solid 2px var(--nav-bar-bg-active);
 }
-/* navbar subsections i.e. logo and nav-links containers */
+/* navbar subsections i.e. logo, menu and nav-links containers */
 nav > div {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
   letter-spacing: 0.1em;
+  color: var(--nav-bar-color);
+}
+/* all the links */
+nav a:link {
+  padding: 20px 10px;
+  color: var(--nav-bar-color);
+}
+/* logo */
+nav > .logo > a {
+  color: var(--nav-bar-color);
+}
+/* nav menu */
+div.menu {
+  display: none;
 }
 /* navigation links container */
 nav > .nav-links {
-  width: 700px;
+  width: 500px;
 }
-/* the links minus the homepage button */
-nav > div > .nav-link {
-  color: var(--nav-bar-color);
-  padding: 20px 10px;
+/* the 1 to 3 navlinks container */
+.nav-link {
+  position: relative;
 }
 /* links on hover */
-nav > div > a:hover {
+nav a:hover {
   color: var(--nav-bar-bg-hover);
   opacity: 0.7;
 }
 /* links when active */
-nav > div > a:active {
+nav a:active {
   text-decoration: none;
   background-color: var(--nav-bar-bg-active);
+}
+/* the sublinks container of the individual navlinks */
+.sublink {
+  position: absolute;
+  width: 170px;
+  top: calc(var(--nav-bar-height) - 20px);
+  right: 0;
+  border: solid;
+  text-align: center;
+  display: none;
+  background-color: var(--nav-bar-bg);
+}
+/* the sublinks anchor */
+.sublink a {
+  display: block;
+  padding: 5px 0;
+  border-bottom: solid 1px var(--nav-bar-color);
+}
+/* the last sublinks anchor */
+.sublink a:last-child {
+  border-bottom: none;
+}
+/* when you hover on the nav link, the sublink will become visible */
+.nav-link:hover > .sublink {
+  display: block;
 }
 /* header */
 header {
@@ -181,7 +220,7 @@ main > .company-about,
 .sub-company {
   width: 300px;
   height: 300px;
-  margin: 15px ;
+  margin: 15px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -205,7 +244,8 @@ main > .company-about,
   background-color: var(--header-bg-overlay);
 }
 /* sub company link hover state */
-.sub-company:hover, .sub-company > a:hover{
+.sub-company:hover,
+.sub-company > a:hover {
   height: 305px;
   width: 305px;
   box-shadow: 0 3px 15px grey;
@@ -237,130 +277,73 @@ main > .company-about,
   font-weight: 600;
   padding: 10px;
 }
-.sub-company p i{
+.sub-company p i {
   font-size: 0.8em;
   padding-left: 10px;
 }
 /* footer */
 footer {
   background-color: var(--footer-bg);
-  /* height: 100px; */
   text-align: center;
   padding: 20px;
+  color: wheat;
 }
-footer .contacts{
+footer a:link,
+footer .location > a {
+  color: wheat;
+}
+footer .contacts {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-footer .contacts p{
+footer .contacts p {
   padding: 0 10px 10px;
 }
-footer .contacts p:hover{
+footer .contacts p:hover {
   text-decoration: underline;
 }
-footer i{
+footer i {
   margin-right: 10px;
 }
 /* media query for tablet */
-@media screen and (max-width:960px){
-  *{
+@media screen and (max-width: 960px) {
+  * {
     --section-container-margin: 0px 70px;
     --section-container-padding: 40px 50px;
-    --nav-bar-height: auto;
   }
-  nav >.nav-links{
-    width: 400px;
-  }
-  /* sub company link hover state */
-.sub-company, .sub-company > a{
-  height: 250px;
-  width: 250px;
 }
-/* sub company link hover state */
-.sub-company:hover, .sub-company > a:hover{
-  height: 255px;
-  width: 255px;
-}
-}
-/* media query for tablet */
-@media screen and (max-width:620px){
-  *{
+/* media query for smaller screen on tablet */
+@media screen and (max-width: 620px) {
+  * {
     --section-container-margin: 0px 40px;
     --section-container-padding: 25px 40px;
-    --nav-bar-height: auto;
   }
-  body{
+  body {
     font-size: 18px;
   }
-  nav{
+  nav {
     padding: 0 20px;
   }
-  nav> .nav-links{
-    width: 370px;
-  }
-  nav> div> .nav-link{
-    padding: 20px 0px;
-  }
-  .sub-companies{
-    padding: 40px 0 50px;
-  }
-  .sub-company{
-    margin: 15px;
-  }
-  .sub-companies:last-child{
-    margin: 0px;
-  }
 }
-@media screen and (max-width:470px){
-  *{
+@media screen and (max-width: 470px) {
+  * {
     --section-container-margin: 0px 20px;
     --section-container-padding: 20px 10px;
   }
-  body{
+  body {
     font-size: 16px;
   }
-  nav > .nav-links{
-   display: none;
-  }
-  .sub-companies{
-    padding: var(--section-container-padding);
-  }
-  /* sub company link hover state */
-.sub-company, .sub-company >a{
-  height: 300px;
-  width: 300px;
-}
-/* sub company link hover state */
-.sub-company:hover, .sub-company > a:hover{
-  height: 305px;
-  width: 305px;
-}
   footer {
     font-size: 14px;
     padding: 10px;
   }
-  footer .contacts{
+  footer .contacts {
     flex-direction: column;
     font-size: 14px;
   }
-  footer .contacts p{
+  footer .contacts p {
     padding: 0;
   }
-}
-@media screen and (width:320px){
-  *{
-    --section-container-margin: 0px 10px;
-    --section-container-padding: 20px 10px;
-  }
-  .sub-company, .sub-company >a{
-  height: 250px;
-  width: 250px;
-}
-/* sub company link hover state */
-.sub-company:hover, .sub-company > a:hover{
-  height: 255px;
-  width: 255px;
-}
 }

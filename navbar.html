@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FontAwesome online -->
+    <script
+      src="https://kit.fontawesome.com/dfede42a17.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FontAwesome offline -->
+    <link rel="stylesheet" href="fontawesome-free-5.12.0-web\css\all.css" />
+    <!-- my style sheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .nav-link {
+        position: relative;
+      }
+      .sublink {
+        position: absolute;
+        width: 150px;
+        top: 60px;
+        right: 0;
+        border: solid;
+        /* padding: 10px; */
+        text-align: center;
+        display: none;
+        background-color: #fff;
+      }
+      .sublink a {
+        display: block;
+        padding: 5px 0;
+        border-bottom: solid 1px green;
+      }
+      .sublink a:last-child {
+        border-bottom: none;
+      }
+      .nav-link:hover > .sublink {
+        display: block;
+      }
+      .menu {
+        display: none;
+      }
+      .menu-btn:hover .nav-links {
+        /* display: block;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+      */
+      }
+    </style>
+
+    <!-- page title -->
+    <title>Company name | Homepage</title>
+  </head>
+  <body>
+    <!-- body flex container -->
+    <div class="flex-container">
+      <!-- navigation bar -->
+      <nav>
+        <!-- website logo -->
+        <div class="logo">
+          <a href="index.html#header" class="nav-link">MAXGLOW</a>
+        </div>
+        <!-- menu btn -->
+        <div class="menu">MENU</div>
+        <!-- navigation links -->
+        <div class="nav-links">
+          <!-- first link -->
+          <div class="nav-link">
+            <a href="html/genius.html">Genius Magazine</a>
+            <!-- sub links -->
+            <div class="sublink">
+              <a href="#">Home</a>
+              <a href="#">About Us</a>
+              <a href="#">Gallery</a>
+              <a href="#">Advertise with Us</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+          <!-- second link -->
+          <div class="nav-link">
+            <a href="html/royalbeads.html">Royal Beads</a>
+            <!-- sub links -->
+            <div class="sublink">
+              <a href="#">Home</a>
+              <a href="#">Our Items</a>
+              <a href="#">Gallery</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+          <!-- third link -->
+          <div class="nav-link">
+            <a href="html/acwf.html">ACWF</a>
+            <!-- sub links -->
+            <div class="sublink">
+              <a href="#">Home</a>
+              <a href="#">What We Do</a>
+              <a href="#">Gallery</a>
+              <a href="#">Become a Member</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
