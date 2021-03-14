@@ -167,7 +167,7 @@ nav a:active {
   border-bottom: none;
 }
 /* when you hover on the nav link, the sublink will become visible */
-.nav-link:hover{
+.nav-link:hover {
   color: var(--nav-bar-bg-hover);
   display: block;
 }
@@ -175,7 +175,7 @@ nav a:active {
   border: var(--nav-bar-bg);
   display: block;
 }
-.nav-link> .sublink:hover{
+.nav-link > .sublink:hover {
   display: block;
 }
 /* header */
