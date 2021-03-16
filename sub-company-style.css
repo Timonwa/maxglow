@@ -94,6 +94,7 @@ section {
 .about-body > div {
   margin: 10px;
   padding: 20px;
+  padding-top: 0;
 }
 .about-description {
   flex-grow: 40%;
@@ -109,6 +110,48 @@ section {
   flex-grow: 60%;
   width: auto;
   height: 300px;
+}
+.royalbeads-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.royalbeads-description .royalbeads-service{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px ;
+}
+.royalbeads-description .royalbeads-service p{flex-grow: 40%;
+  padding: 20px;
+  text-align: center;
+  width: 50%;
+}
+.royalbeads-description .royalbeads-service img{
+  flex-grow: 50%;
+  height: 200px;
+  width: 40%;
+  padding: 20px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.acwf-description .acwf-service{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.acwf-description .acwf-service img{
+width:auto;
+height: 300px;
+padding: 15px;
 }
 /* gallery */
 #gallery {
@@ -272,6 +315,9 @@ footer{
   nav{
     height: 50px;
   }
+  nav a:link{
+    color: var(--nav-bar-bg);
+  }
 /* sub menu */
 .menu{
   display: block;
@@ -321,7 +367,7 @@ div.sub-nav-links {
 }
 .contacts>.socials>div{
   align-items: center;
-  padding: 0px;
+  padding: 5px;
 }
 .contacts>.socials>div>a{
   padding-bottom: 5px;
@@ -342,11 +388,43 @@ div.sub-nav-links {
   nav{
     padding: 0 20px;
   }
-  #genius-header div{
-    padding: 10px;
+  header div{
+    padding:0 10px;
 }
 #about > .about-body{
   flex-direction: column;
+  text-align: center;
+}
+.royalbeads-description .royalbeads-service{
+  flex-direction: column-reverse;
+  padding: 5px;
+}
+.royalbeads-description .royalbeads-service:last-child{
+  padding-bottom: 0px;
+}
+.royalbeads-description .royalbeads-service p{flex-grow: 100%;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+.royalbeads-service{
+  margin-top: 10px;
+}
+.royalbeads-description .royalbeads-service img{
+  flex-grow: 100%;
+  height: auto;
+  width: 250px;
+  padding: 5px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.acwf-description .acwf-service img{
+width: 300px;
+height: auto;
+padding: 15px;
 }
 #gallery .card{
   padding: 10px;
@@ -359,6 +437,6 @@ div.sub-nav-links {
   text-align: center;
 }
 #advert{
-  padding: 10px 30px;
+  padding: 30px;
 }
 }

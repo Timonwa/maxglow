@@ -19,9 +19,8 @@
     <title>African Charity Worldwide Foundation | Homepage</title>
 
     <style>
-      img {
-        width: 200px;
-        height: auto;
+      header{
+        background-image: url("../img/group-of-children.jpg");
       }
     </style>
   </head>
@@ -47,10 +46,10 @@
           <p class="menu">MENU</p>
           <!-- the links for the sub company -->
           <div class="sub-nav-links">
-            <a href="#acwf-header" class="sub-nav-link">Home</a>
+            <a href="#genius-header" class="sub-nav-link">Home</a>
             <a href="#about" class="sub-nav-link">About</a>
             <a href="gallery.html" class="sub-nav-link">Gallery</a>
-            <a href="#advert" class="sub-nav-link">Advertise with Us</a>
+            <a href="#advert" class="sub-nav-link">Work With Us</a>
             <a href="#contact" class="sub-nav-link">Contact</a>
           </div>
         </div>
@@ -60,7 +59,7 @@
       <header id="acwf-header">
         <!-- header content -->
         <div>
-          <h1>Genius Fashion Magazine</h1>
+          <h1>African Charity Worldwide Foundation</h1>
           <h3>Charity to the world</h3>
         </div>
       </header>
@@ -72,21 +71,23 @@
         <!-- about body -->
         <div class="about-body">
           <!-- about discription -->
-          <div class="about-description">
+          <div class="about-description acwf-description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis illo soluta, quos voluptates quaerat mollitia ipsum molestiae tenetur in rerum libero architecto modi reprehenderit eum expedita saepe, neque praesentium quod.</p>
             <!-- story one -->
-            <div>
+            <div class="acwf-service">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat porro eos enim! Sapiente autem incidunt obcaecati! Consectetur sequi accusantium magni quis quos eos voluptates perferendis, temporibus sint dolor debitis porro.
               </p>
               <img src="../img/charity-food-sharing.jpg" alt="">
             </div>
             <!-- story two -->
-            <div>
+            <div class="acwf-service">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat porro eos enim! Sapiente autem incidunt obcaecati! Consectetur sequi accusantium magni quis quos eos voluptates perferendis, temporibus sint dolor debitis porro.
               </p>
               <img src="../img/charity-food-sharing.jpg" alt="">
             </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor exercitationem ab reiciendis minima voluptates reprehenderit fugit minus cum nulla, animi a molestiae unde, eos sunt qui magnam? Repudiandae, distinctio ipsam.</p>
           </div>
         </div>
       </section>
@@ -102,33 +103,86 @@
           ipsa ullam nobis.
         </p>
       </section>
+      
+      <!-- gallery -->
+      <section id="gallery">
+        <!-- the headings -->
+        <div>
+          <h3>What we have done</h3>
+        </div>
+        <!-- preview of posts in the gallery -->
+        <div class="gallery-imgs">
+          <!-- card1 -->
+          <div class="card">
+            <img src="../img/group-of-children.jpg" alt="" />
+            <p>Child Rights Campaign</p>
+          </div>
+          <!-- card2 -->
+          <div class="card">
+            <img src="../img/img2.jpg" alt="" />
+            <p>Local Heritage Festival</p>
+          </div>
+          <!-- card3 -->
+          <div class="card">
+            <img src="../img/charity-food-sharing.jpg" alt="" />
+            <p>Covid Rescue Food Campaign</p>
+          </div>
+          <!-- card4 -->
+         <div class="card">
+            <img src="../img/group-of-children.jpg" alt="" />
+            <p>Child Rights Campaign</p>
+          </div>
+          <!-- card5 -->
+          <div class="card">
+            <img src="../img/img2.jpg" alt="" />
+            <p>Local Heritage Festival</p>
+          </div>
+          <!-- card6 -->
+          <div class="card">
+            <img src="../img/charity-food-sharing.jpg" alt="" />
+            <p>Covid Rescue Food Campaign</p>
+          </div>
+        </div>
+        <!-- link to the gallery with all the pictures -->
+        <p class="gallery-link"><a href="gallery.html">View more</a></p>
+      </section>
       <!-- members list -->
-      <section class="members">
+     <section id="members">
         <!-- section title -->
         <h3>Members of our team</h3>
         <!-- member profile -->
-        <div>
-          <img src="../img/mum.jpg" alt="">
-          <p>profile name</p>
-          <p>position</p>
-        </div>
-        <!-- member profile -->
-        <div>
-          <img src="../img/mum.jpg" alt="">
-          <p>profile name</p>
-          <p>position</p>
-        </div>
-        <!-- member profile -->
-        <div>
-          <img src="../img/mum.jpg" alt="">
-          <p>profile name</p>
-          <p>position</p>
-        </div>
-        <!-- member profile -->
-        <div>
-          <img src="../img/mum.jpg" alt="">
-          <p>profile name</p>
-          <p>position</p>
+        <div class="members">
+          <div>
+            <img src="../img/mum.jpg" alt="" />
+            <div>
+              <p>profile name</p>
+              <p>position</p>
+            </div>
+          </div>
+          <!-- member profile -->
+          <div>
+            <img src="../img/tomi.jpg" alt="" />
+            <div>
+              <p>profile name</p>
+              <p>position</p>
+            </div>
+          </div>
+          <!-- member profile -->
+          <div>
+            <img src="../img/mum.jpg" alt="" />
+            <div>
+              <p>profile name</p>
+              <p>position</p>
+            </div>
+          </div>
+          <!-- member profile -->
+          <div>
+            <img src="../img/tomi.jpg" alt="" />
+            <div>
+              <p>profile name</p>
+              <p>position</p>
+            </div>
+          </div>
         </div>
       </section>
       <!-- contact section -->
@@ -159,13 +213,13 @@
             <!-- social media handles -->
             <div>
               <!-- facebook handle -->
-              <span class="social-handle"
-                ><i class="fab fa-facebook">@acwf</i></span
-              >
+              <a class="social-handle">
+                <i class="fab fa-facebook"></i>@geniusmag
+              </a>
               <!-- instagram handle -->
-              <span class="social-handle"
-                ><i class="fab fa-instagram">@acwf</i></span
-              >
+              <a class="social-handle">
+                <i class="fab fa-instagram"></i>@geniusmag
+              </a>
             </div>
           </div>
         </div>
