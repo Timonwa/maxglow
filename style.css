@@ -292,6 +292,71 @@ main > .company-about,
   font-size: 0.8em;
   padding-left: 10px;
 }
+/* gallery */
+.gallery-nav{
+  /* position: fixed; */
+  height: 120px;
+}
+.gallery-nav>div{
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--nav-bar-bg-hover);
+  color: var(--nav-bar-color);
+  font-weight: bold;
+  font-size: 16px;
+}
+#gallery {
+  border-top: solid 2px var(--nav-bar-color);
+  padding: var(--section-container-padding);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#gallery > .gallery-imgs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+#gallery .card {
+  padding: 20px;
+  width: auto;
+}
+#gallery img {
+  height: 250px;
+  width: auto;
+}
+#gallery p {
+  text-align: center;
+}
+#gallery a {
+  color: black;
+  font-weight: 600;
+}
+#gallery .gallery-link {
+  border: 2px solid var(--nav-bar-bg);
+  padding: 10px 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+#gallery .gallery-link a {
+  color: var(--nav-bar-bg);
+}
+#gallery .gallery-link:hover {
+  background-color: var(--main-bg);
+}
 /* footer */
 footer {
   background-color: var(--footer-bg);
@@ -371,6 +436,16 @@ footer i {
   body {
     font-size: 16px;
   }
+  #gallery{
+    font-size: 14px;
+  }
+#gallery .card{
+  padding: 10px;
+}
+#gallery img{
+  width: 250px;
+  height: auto;
+}
   footer {
     font-size: 14px;
     padding: 10px;
