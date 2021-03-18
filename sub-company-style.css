@@ -12,11 +12,6 @@ a:visited {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  /* variables */
-  --nav-bar-bg: rgb(61, 153, 92);
-  --nav-bar-color: rgb(250, 250, 250);
-  --nav-bar-bg-active: #f0956e;
 }
 /* nav bar */
 nav {
@@ -61,11 +56,6 @@ div.logo-links,
   flex-direction: column;
   text-align: center;
   width: 200px;
-}
-/* header */
-header {
-  background-image: url("img/magazine.jpg");
-  color: var(--nav-bar-bg-active);
 }
 /* sections */
 section {

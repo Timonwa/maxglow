@@ -263,21 +263,21 @@ main > .company-about,
 }
 /* genius company */
 .genius {
-  background-image: url(img/magazine.jpg);
+  background-image: url(img/genius-img/magazine.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 /* royal beads company */
 .royalbeads {
-  background-image: url(img/strings-of-beads.jpg);
+  background-image: url(img/royalbeads-img/beads-hung-on-pole.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 /* acwf company */
 .acwf {
-  background-image: url(img/charity-food-sharing.jpg);
+  background-image: url(img/acwf-img/charity-food-sharing.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -342,6 +342,17 @@ main > .company-about,
   color: black;
   font-weight: 600;
 }
+/* oder bead btn */
+#gallery .order-bead {
+  padding: 5px;
+}
+#gallery .order-bead a {
+  color: var(--nav-bar-bg);
+}
+#gallery .order-bead:hover {
+  background-color: var(--main-bg);
+}
+/* gallery link */
 #gallery .gallery-link {
   border: 2px solid var(--nav-bar-bg);
   padding: 10px 20px;
@@ -356,6 +367,9 @@ main > .company-about,
 }
 #gallery .gallery-link:hover {
   background-color: var(--main-bg);
+}
+.gallery-link{
+  display: none;
 }
 address{
   font-style: normal;
