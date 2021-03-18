@@ -389,6 +389,10 @@ address {
     flex-direction: column;
     text-align: center;
   }
+  .genius-about-img img{
+    width: 80%;
+    height: auto;
+  }
   .royalbeads-description .royalbeads-service {
     flex-direction: column;
     margin: 10px 0;
