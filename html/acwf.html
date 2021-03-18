@@ -19,7 +19,17 @@
     <title>African Charity Worldwide Foundation | Homepage</title>
 
     <style>
-      header{
+      * {
+        /* variables */
+        --main-bg: rgb(238, 238, 238);
+        --main-color: rgb(0, 0, 0);
+        --nav-bar-bg: #722f37;
+        --nav-bar-color: #e0de8b;
+        --nav-bar-bg-active: #dbc837;
+        --footer-bg: #722f37;
+        /* --footer-color: ; */
+      }
+      header {
         background-image: url("../img/group-of-children.jpg");
       }
     </style>
@@ -72,22 +82,38 @@
         <div class="about-body">
           <!-- about discription -->
           <div class="about-description acwf-description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis illo soluta, quos voluptates quaerat mollitia ipsum molestiae tenetur in rerum libero architecto modi reprehenderit eum expedita saepe, neque praesentium quod.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perspiciatis illo soluta, quos voluptates quaerat mollitia ipsum
+              molestiae tenetur in rerum libero architecto modi reprehenderit
+              eum expedita saepe, neque praesentium quod.
+            </p>
             <!-- story one -->
             <div class="acwf-service">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat porro eos enim! Sapiente autem incidunt obcaecati! Consectetur sequi accusantium magni quis quos eos voluptates perferendis, temporibus sint dolor debitis porro.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                porro eos enim! Sapiente autem incidunt obcaecati! Consectetur
+                sequi accusantium magni quis quos eos voluptates perferendis,
+                temporibus sint dolor debitis porro.
               </p>
-              <img src="../img/charity-food-sharing.jpg" alt="">
+              <img src="../img/charity-food-sharing.jpg" alt="" />
             </div>
             <!-- story two -->
             <div class="acwf-service">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat porro eos enim! Sapiente autem incidunt obcaecati! Consectetur sequi accusantium magni quis quos eos voluptates perferendis, temporibus sint dolor debitis porro.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                porro eos enim! Sapiente autem incidunt obcaecati! Consectetur
+                sequi accusantium magni quis quos eos voluptates perferendis,
+                temporibus sint dolor debitis porro.
               </p>
-              <img src="../img/charity-food-sharing.jpg" alt="">
+              <img src="../img/charity-food-sharing.jpg" alt="" />
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor exercitationem ab reiciendis minima voluptates reprehenderit fugit minus cum nulla, animi a molestiae unde, eos sunt qui magnam? Repudiandae, distinctio ipsam.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              exercitationem ab reiciendis minima voluptates reprehenderit fugit
+              minus cum nulla, animi a molestiae unde, eos sunt qui magnam?
+              Repudiandae, distinctio ipsam.
+            </p>
           </div>
         </div>
       </section>
@@ -103,7 +129,7 @@
           ipsa ullam nobis.
         </p>
       </section>
-      
+
       <!-- gallery -->
       <section id="gallery">
         <!-- the headings -->
@@ -113,41 +139,41 @@
         <!-- preview of posts in the gallery -->
         <div class="gallery-imgs">
           <!-- card1 -->
-          <div class="card">
+          <figure class="card">
             <img src="../img/group-of-children.jpg" alt="" />
-            <p>Child Rights Campaign</p>
-          </div>
+            <figcaption>Child Rights Campaign</figcaption>
+          </figure>
           <!-- card2 -->
-          <div class="card">
+          <figure class="card">
             <img src="../img/img2.jpg" alt="" />
-            <p>Local Heritage Festival</p>
-          </div>
+            <figcaption>Local Heritage Festival</figcaption>
+          </figure>
           <!-- card3 -->
-          <div class="card">
+          <figure class="card">
             <img src="../img/charity-food-sharing.jpg" alt="" />
-            <p>Covid Rescue Food Campaign</p>
-          </div>
+            <figcaption>Covid Rescue Food Campaign</figcaption>
+          </figure>
           <!-- card4 -->
-         <div class="card">
+          <figure class="card">
             <img src="../img/group-of-children.jpg" alt="" />
-            <p>Child Rights Campaign</p>
-          </div>
+            <figcaption>Child Rights Campaign</figcaption>
+          </figure>
           <!-- card5 -->
-          <div class="card">
+          <figure class="card">
             <img src="../img/img2.jpg" alt="" />
-            <p>Local Heritage Festival</p>
-          </div>
+            <figcaption>Local Heritage Festival</figcaption>
+          </figure>
           <!-- card6 -->
-          <div class="card">
+          <figure class="card">
             <img src="../img/charity-food-sharing.jpg" alt="" />
-            <p>Covid Rescue Food Campaign</p>
-          </div>
+            <figcaption>Covid Rescue Food Campaign</figcaption>
+          </figure>
         </div>
         <!-- link to the gallery with all the pictures -->
         <p class="gallery-link"><a href="gallery.html">View more</a></p>
       </section>
       <!-- members list -->
-     <section id="members">
+      <section id="members">
         <!-- section title -->
         <h3>Members of our team</h3>
         <!-- member profile -->
@@ -187,49 +213,51 @@
       </section>
       <!-- contact section -->
       <section id="contact">
-        <!-- contact headings -->
-        <h3>You can contact us using any of the following means</h3>
-        <div class="contacts">
-          <!-- phone number -->
-          <p class="phone">
-            <i class="fa fa-phone"></i
-            ><a href="tel:+2348000000000">+2348000000000</a>
-          </p>
-          <!-- email address -->
-          <p class="email">
-            <i class="fa fa-envelope"></i
-            ><a href="mailto:maxglow@gmail.com">acwf@gmail.com</a>
-          </p>
-          <!-- location -->
-          <p class="location">
-            <i class="fa fa-map-pin"></i><a href="#">Lagos, Nigeria</a>
-          </p>
-          <!-- social media -->
-          <div class="socials">
-            <!-- social headings -->
-            <p>
-              Follow us on our social media handles to hear the latest from us
+        <address>
+          <!-- contact headings -->
+          <h3>You can contact us using any of the following means</h3>
+          <div class="contacts">
+            <!-- phone number -->
+            <p class="phone">
+              <i class="fa fa-phone"></i
+              ><a href="tel:+2348000000000">+2348000000000</a>
             </p>
-            <!-- social media handles -->
-            <div>
-              <!-- facebook handle -->
-              <a class="social-handle">
-                <i class="fab fa-facebook"></i>@geniusmag
-              </a>
-              <!-- instagram handle -->
-              <a class="social-handle">
-                <i class="fab fa-instagram"></i>@geniusmag
-              </a>
+            <!-- email address -->
+            <p class="email">
+              <i class="fa fa-envelope"></i
+              ><a href="mailto:acwf@gmail.com">acwf@gmail.com</a>
+            </p>
+            <!-- location -->
+            <p class="location">
+              <i class="fa fa-map-pin"></i><a href="#">Lagos, Nigeria</a>
+            </p>
+            <!-- social media -->
+            <div class="socials">
+              <!-- social headings -->
+              <p>
+                Follow us on our social media handles to hear the latest from us
+              </p>
+              <!-- social media handles -->
+              <div>
+                <!-- facebook handle -->
+                <a class="social-handle" href="#">
+                  <i class="fab fa-facebook"></i>@acwf
+                </a>
+                <!-- instagram handle -->
+                <a class="social-handle" href="#">
+                  <i class="fab fa-instagram"></i>@acwf
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+        </address>
       </section>
       <!-- footer -->
       <footer>
         <!-- company footer signature and copyright] -->
         <div>
           <h5>African Charity Worldwide Foundation</h5>
-          <p>subsidiary of</p>
+          <h6>subsidiary of</h6>
           <h5>Princess Group of Companies &copy; 2021</h5>
         </div>
       </footer>

@@ -144,7 +144,7 @@ nav a:active {
 .sublink {
   position: absolute;
   width: 170px;
-  top: calc(var(--nav-bar-height) - 30px);
+  top: calc(var(--nav-bar-height) - 35px);
   right: 0;
   border: solid;
   text-align: center;
@@ -357,6 +357,9 @@ main > .company-about,
 #gallery .gallery-link:hover {
   background-color: var(--main-bg);
 }
+address{
+  font-style: normal;
+}
 /* footer */
 footer {
   background-color: var(--footer-bg);
@@ -419,7 +422,7 @@ footer i {
     padding: 10px 0;
   }
   .sublink {
-    top: 30px;
+    top: 25px;
   }
   .sublink:last-child {
     right: -10px;

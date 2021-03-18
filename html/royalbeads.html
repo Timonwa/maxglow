@@ -19,7 +19,17 @@
     <title>Royal Beads And Accessories | Homepage</title>
 
     <style>
-      header{
+      * {
+        /* variables */
+        --main-bg: rgb(238, 238, 238);
+        --main-color: rgb(0, 0, 0);
+        --nav-bar-bg: #2a193b;
+        --nav-bar-color: #e0de8b;
+        --nav-bar-bg-active: #de8b16;
+        --footer-bg: #2a193b;
+        /* --footer-color: ; */
+      }
+      header {
         background-image: url(../img/img2.jpg);
       }
     </style>
@@ -48,7 +58,7 @@
           <div class="sub-nav-links">
             <a href="#genius-header" class="sub-nav-link">Home</a>
             <a href="#about" class="sub-nav-link">Our Products</a>
-            <a href="gallery.html" class="sub-nav-link">Gallery</a>
+            <a href="#gallery" class="sub-nav-link">Gallery</a>
             <a href="#contact" class="sub-nav-link">Contact</a>
           </div>
         </div>
@@ -74,10 +84,10 @@
             <!-- what we do -->
             <div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
-                totam nulla. Vero maxime nihil autem velit eum corporis.
-                Mollitia incidunt odit nesciunt quidem asperiores totam minus
-                placeat reprehenderit itaque id
+                At Royal Beads And Accessories, we create sit amet, consectetur
+                adipisicing elit. Vero, totam nulla. Vero maxime nihil autem
+                velit eum corporis. Mollitia incidunt odit nesciunt quidem
+                asperiores totam minus placeat reprehenderit itaque id
               </p>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -87,31 +97,28 @@
               </p>
             </div>
             <!-- service 1 -->
-            <div class="royalbeads-service">
+            <figure class="royalbeads-service">
               <!-- service 1 detail -->
-              <p>
-                 Custom-made beaded Jewelry for your special occasions
-              </p>
+              <figcaption>
+                Custom-made beaded Jewelry for your special occasions
+              </figcaption>
               <!-- service 1 picture -->
               <img src="../img/strings-of-beads.jpg" alt="" />
-            </div>
+            </figure>
             <!-- service 2 -->
-            <div class="royalbeads-service">
+            <figure class="royalbeads-service">
               <!-- service 2 detail -->
-              <p>Quality at its Peak
-              </p>
+              <figcaption>Quality at its Peak</figcaption>
               <!-- service 2 picture -->
               <img src="../img/strings-of-beads.jpg" alt="" />
-            </div>
+            </figure>
             <!-- service 3 -->
-            <div class="royalbeads-service">
+            <figure class="royalbeads-service">
               <!-- service 3 detail -->
-              <p>
-                Custom made beads for you
-              </p>
+              <figcaption>Custom made beads for you</figcaption>
               <!-- service 3 picture -->
               <img src="../img/strings-of-beads.jpg" alt="" />
-            </div>
+            </figure>
           </div>
         </div>
       </section>
@@ -124,84 +131,86 @@
         <!-- preview of posts in the gallery -->
         <div class="gallery-imgs">
           <!-- card1 -->
-          <div class="card">
+          <figure class="card">
             <img src="../img/img1.jpg" alt="" />
-            <p>crystal bead</p>
-          </div>
+            <figcaption>crystal bead</figcaption>
+          </figure>
           <!-- card2 -->
-          <div class="card">
+          <figure class="card">
             <img src="../img/img3.jpg" alt="" />
-            <p>coral bead</p>
-          </div>
+            <figcaption>coral bead</figcaption>
+          </figure>
           <!-- card3 -->
-          <div class="card">
+          <figure class="card">
             <img src="../img/strings-of-beads.jpg" alt="" />
-            <p>glass bead</p>
-          </div>
+            <figcaption>glass bead</figcaption>
+          </figure>
           <!-- card4 -->
-          <div class="card">
+          <figure class="card">
             <img src="../img/img1.jpg" alt="" />
-            <p>crystal bead</p>
-          </div>
+            <figcaption>crystal bead</figcaption>
+          </figure>
           <!-- card5 -->
-          <div class="card">
+          <figure class="card">
             <img src="../img/img3.jpg" alt="" />
-            <p>coral bead</p>
-          </div>
+            <figcaption>coral bead</figcaption>
+          </figure>
           <!-- card6 -->
-          <div class="card">
+          <figure class="card">
             <img src="../img/strings-of-beads.jpg" alt="" />
-            <p>glass bead</p>
-          </div>
+            <figcaption>glass bead</figcaption>
+          </figure>
         </div>
         <!-- link to the gallery with all the pictures -->
         <p class="gallery-link"><a href="gallery.html">View more</a></p>
       </section>
       <!-- contact section -->
       <section id="contact">
-        <!-- contact headings -->
-        <h3>If you like what you see the hit us up on the following</h3>
-        <div class="contacts">
-          <!-- phone number -->
-          <p class="phone">
-            <i class="fa fa-phone"></i
-            ><a href="tel:+2348000000000">+2348000000000</a>
-          </p>
-          <!-- email address -->
-          <p class="email">
-            <i class="fa fa-envelope"></i
-            ><a href="mailto:maxglow@gmail.com">royalbeads@gmail.com</a>
-          </p>
-          <!-- location -->
-          <p class="location">
-            <i class="fa fa-map-pin"></i><a href="#">Lagos, Nigeria</a>
-          </p>
-          <!-- social media -->
-          <div class="socials">
-            <!-- social headings -->
-            <p>
-              Follow us on our social media handles to hear the latest from us
+        <address>
+          <!-- contact headings -->
+          <h3>If you like what you see the hit us up on the following</h3>
+          <div class="contacts">
+            <!-- phone number -->
+            <p class="phone">
+              <i class="fa fa-phone"></i
+              ><a href="tel:+2348000000000">+2348000000000</a>
             </p>
-            <!-- social media handles -->
-            <div>
-              <!-- facebook handle -->
-              <a class="social-handle">
-                <i class="fab fa-facebook"></i>@geniusmag
-              </a>
-              <!-- instagram handle -->
-              <a class="social-handle">
-                <i class="fab fa-instagram"></i>@geniusmag
-              </a>
+            <!-- email address -->
+            <p class="email">
+              <i class="fa fa-envelope"></i
+              ><a href="mailto:royalbeads@gmail.com">royalbeads@gmail.com</a>
+            </p>
+            <!-- location -->
+            <p class="location">
+              <i class="fa fa-map-pin"></i><a href="#">Lagos, Nigeria</a>
+            </p>
+            <!-- social media -->
+            <div class="socials">
+              <!-- social headings -->
+              <p>
+                Follow us on our social media handles to hear the latest from us
+              </p>
+              <!-- social media handles -->
+              <div>
+                <!-- facebook handle -->
+                <a class="social-handle" href="#">
+                  <i class="fab fa-facebook"></i>@royalbeads
+                </a>
+                <!-- instagram handle -->
+                <a class="social-handle" href="#">
+                  <i class="fab fa-instagram"></i>@royalbeads
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+        </address>
       </section>
       <!-- footer -->
       <footer>
         <!-- company footer signature and copyright] -->
         <div>
           <h5>Royal Beads and Accessories</h5>
-          <p>subsidiary of</p>
+          <h6>subsidiary of</h6>
           <h5>Princess Group of Companies &copy; 2021</h5>
         </div>
       </footer>
