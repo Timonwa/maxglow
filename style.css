@@ -36,40 +36,34 @@ h1 {
   font-size: 1.9rem;
   line-height: 2.3rem;
   text-align: center;
-  padding-bottom: 1rem;
 }
 h2 {
   font-size: 1.5rem;
   line-height: 1.8rem;
   text-align: center;
-  padding-bottom: 0.5rem;
 }
 h3 {
   font-size: 1.2rem;
   line-height: 1.5rem;
   text-align: center;
-  padding-bottom: 0.3rem;
 }
 h4 {
   font-size: 0.95rem;
   line-height: 1.2rem;
   text-align: center;
-  padding-bottom: 0.3rem;
 }
 h5 {
   font-size: 0.75rem;
   line-height: 0.9rem;
   text-align: center;
-  padding-bottom: 0.3rem;
 }
 h6 {
   font-size: 0.6rem;
   line-height: 0.75rem;
   text-align: center;
-  padding-bottom: 0.3rem;
 }
 p {
-  line-height: 1.2rem;
+  line-height: 1.6rem;
 }
 /** to ensure that when you click on an id link, the header will not cover the  beginning of the content the id is pointing to */
 [id] {
@@ -148,9 +142,9 @@ nav a:active {
   right: 0;
   border: solid;
   text-align: center;
-  display: none;
   background-color: var(--nav-bar-bg);
   font-size: 14px;
+  display: none;
 }
 .sublink:last-child {
   right: -40px;
@@ -158,9 +152,9 @@ nav a:active {
 
 /* the sublinks anchor */
 .sublink a {
-  display: block;
   color: var(--nav-bar-color);
-  border-bottom: solid 1px var(--nav-bar-color);
+  border-top: solid 1px var(--nav-bar-color);
+  display: block;
 }
 /* the last sublinks anchor */
 .sublink a:last-child {

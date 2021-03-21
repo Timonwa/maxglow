@@ -21,10 +21,12 @@ nav {
 div.logo-box,
 div.menu {
   position: relative;
+  cursor:pointer;
 }
 div.logo-links,
 .menu {
   display: none;
+  cursor:pointer;
 }
 .logo-links {
   left: -40px;
