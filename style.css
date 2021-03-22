@@ -63,7 +63,7 @@ h6 {
   text-align: center;
 }
 p {
-  line-height: 1.6rem;
+  line-height: 1.5rem;
 }
 /** to ensure that when you click on an id link, the header will not cover the  beginning of the content the id is pointing to */
 [id] {
@@ -142,9 +142,9 @@ nav a:active {
   right: 0;
   border: solid;
   text-align: center;
+  display: none;
   background-color: var(--nav-bar-bg);
   font-size: 14px;
-  display: none;
 }
 .sublink:last-child {
   right: -40px;
@@ -152,9 +152,9 @@ nav a:active {
 
 /* the sublinks anchor */
 .sublink a {
-  color: var(--nav-bar-color);
-  border-top: solid 1px var(--nav-bar-color);
   display: block;
+  color: var(--nav-bar-color);
+  border-bottom: solid 1px var(--nav-bar-color);
 }
 /* the last sublinks anchor */
 .sublink a:last-child {
@@ -208,6 +208,7 @@ main > .company-about,
 .company-about {
   border-bottom: solid 1px grey;
   padding: 40px 0 40px;
+  text-align: justify;
 }
 /* the sub companies container */
 .sub-companies {
@@ -276,10 +277,14 @@ main > .company-about,
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* the name of the company */
+/* the name of the subcompany */
+.sub-company h4{
+  font-weight: 900;
+}
+/* link of the subcompany */
 .sub-company p {
   background-color: var(--header-bg-overlay);
-  font-weight: 600;
+  font-weight: 500;
   padding: 10px;
 }
 .sub-company p i {

@@ -191,6 +191,9 @@ section {
 #advert p {
   text-align: justify;
 }
+.genius-advert{
+  border-top: solid 2px var(--nav-bar-bg);
+}
 #members > .members {
   display: flex;
   flex-direction: row;
