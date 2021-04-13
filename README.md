@@ -1,4 +1,4 @@
-## website-for-princess
+## MAXGLOW
 ### A company profile website.
 This is a static 4 page website made for a client to showcase their different businesses.
 The first page which is the main/home page shows the main company details and has links to the other 3 companies or sub companies/business runned by the owner.
