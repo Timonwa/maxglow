@@ -58,6 +58,10 @@ div.logo-links,
   text-align: center;
   width: 200px;
 }
+/* header */
+header h3{
+  font-family: var(--serif2);
+}
 /* sections */
 section {
   padding: var(--section-container-padding);

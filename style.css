@@ -1,8 +1,24 @@
+  @font-face {
+    font-family: Josefin Sans;
+    src: url('../fonts/Josefin_Sans/JosefinSans-Regular.ttf');
+  }
+  @font-face {
+    font-family: Zilla Slab;
+    src: url('../fonts/Zilla_Slab/ZillaSlab-Bold.ttf');
+  }
+  @font-face {
+    font-family: Vollkorn;
+    src: url('../fonts/Vollkorn/Vollkorn-Bold.ttf');
+  }
+  @font-face {
+    font-family: Vollkorn Italic;
+    src: url('../fonts/Vollkorn/Vollkorn-BoldItalic.ttf');
+  }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: zilla, monospace;
 
   /* variables */
   --main-bg: rgb(238, 238, 238);
@@ -22,8 +38,9 @@
   --sub-company-bg: rgba(0, 0, 0, 0.596);
   --footer-bg: rgb(56, 133, 82);
   --footer-color: rgb(0, 0, 0);
-
-  @import url();
+  --sans-serif: 'Josefin Sans', sans-serif;
+  --serif: 'Vollkorn', serif;
+  --serif2: 'Vollkorn Italic', serif;
 }
 /* reseting the link states to black and no decoration */
 a,
@@ -34,39 +51,40 @@ a:visited {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
-/* h1 to h6 and p default size and line height */
+/* h1 to h6 and p default size and line height,etc */
+h1,h2,h3,h4,h5,h6{
+  text-align: center;
+  font-family: var(--serif);
+  letter-spacing: 4px;
+}
 h1 {
   font-size: 1.9rem;
   line-height: 2.3rem;
-  text-align: center;
 }
 h2 {
   font-size: 1.5rem;
   line-height: 1.8rem;
-  text-align: center;
 }
 h3 {
   font-size: 1.2rem;
   line-height: 1.5rem;
-  text-align: center;
 }
 h4 {
   font-size: 0.95rem;
   line-height: 1.2rem;
-  text-align: center;
 }
 h5 {
   font-size: 0.75rem;
   line-height: 0.9rem;
-  text-align: center;
 }
 h6 {
   font-size: 0.6rem;
   line-height: 0.75rem;
-  text-align: center;
 }
 p {
   line-height: 1.5rem;
+  font-family: var(--sans-serif);
+  letter-spacing: 1px;
 }
 /** to ensure that when you click on an id link, the header will not cover the  beginning of the content the id is pointing to */
 [id] {
@@ -101,6 +119,9 @@ nav {
   border-bottom: solid 2px var(--nav-bar-bg-active);
 }
 /* navbar subsections i.e. logo, menu and nav-links containers */
+nav *{
+  font-family: var(--serif);
+}
 nav > div {
   display: flex;
   flex-direction: row;
