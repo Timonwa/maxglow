@@ -62,6 +62,9 @@ div.logo-links,
 header h3{
   font-family: var(--serif2);
 }
+header h1{
+  padding: 0.1em;
+}
 /* sections */
 section {
   padding: var(--section-container-padding);
@@ -289,6 +292,9 @@ section {
 }
 footer {
   color: var(--nav-bar-color);
+}
+footer div h6{
+  padding: 0.4em;
 }
 address {
   font-style: normal;

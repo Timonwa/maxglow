@@ -86,6 +86,11 @@ p {
   font-family: var(--sans-serif);
   letter-spacing: 1px;
 }
+figcaption{
+  padding-top: 4px;
+  font-family: var(--sans-serif);
+  letter-spacing: 1px;
+}
 /** to ensure that when you click on an id link, the header will not cover the  beginning of the content the id is pointing to */
 [id] {
   scroll-margin-top: 5em;
