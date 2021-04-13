@@ -145,6 +145,9 @@ section {
   padding: 15px;
 }
 /* gallery */
+#gallery *{
+  /* border: solid; */
+}
 #gallery {
   padding: var(--section-container-padding);
   background: #fff;
@@ -163,13 +166,12 @@ section {
   margin: 10px;
 }
 #gallery .card {
-  margin: 10px auto;
-  padding: 20px;
-  width: auto;
+  width: 300px;
+  margin: 10px;
 }
 #gallery img {
-  height: 250px;
-  max-width: 300px;
+  height: auto;
+  width: 100%;
 }
 #gallery figcaption {
   text-align: center;
