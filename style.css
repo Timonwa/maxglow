@@ -55,41 +55,87 @@ a:visited {
 h1,h2,h3,h4,h5,h6{
   text-align: center;
   font-family: var(--serif);
-  letter-spacing: 4px;
+  line-height: 1.5em;
 }
 h1 {
-  font-size: 1.9rem;
-  line-height: 2.3rem;
+  margin-bottom: 0.8rem;
 }
 h2 {
-  font-size: 1.5rem;
-  line-height: 1.8rem;
+  margin-bottom: 0.75rem;
 }
 h3 {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  margin-bottom: 0.6rem;
 }
 h4 {
-  font-size: 0.95rem;
-  line-height: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 h5 {
-  font-size: 0.75rem;
-  line-height: 0.9rem;
+  margin-bottom: 0.4rem;
 }
 h6 {
-  font-size: 0.6rem;
-  line-height: 0.75rem;
+  margin-bottom: 0.3rem;
 }
 p {
-  line-height: 1.5rem;
   font-family: var(--sans-serif);
-  letter-spacing: 1px;
 }
 figcaption{
   padding-top: 4px;
   font-family: var(--sans-serif);
   letter-spacing: 1px;
+}
+/** medium=608px (608px-960px) */
+@media screen and (max-width: 960px) {
+  /* body */
+  body {
+    font-size: 17px;
+  }
+  /* text elements */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    line-height: 1.4em;
+    line-height: 140%;
+  }
+}
+/** small=400px (400px-608px) */
+@media screen and (max-width: 608px) {
+  /* body */
+  body {
+    font-size: 16px;
+  }
+  /* text elements */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    line-height: 1.3em;
+    line-height: 130%;
+  }
+}
+/** small=400px (400px and below) */
+@media screen and (max-width: 400px) {
+  /* body */
+  body {
+    font-size: 16px;
+  }
+  /* text elements */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    line-height: 1.3em;
+    line-height: 130%;
+  }
 }
 /** to ensure that when you click on an id link, the header will not cover the  beginning of the content the id is pointing to */
 [id] {
@@ -97,7 +143,7 @@ figcaption{
 }
 /* body */
 body {
-  font-size: 19px;
+  font-size: 18px;
   background-color: var(--main-bg);
   color: var(--main-color);
 }
@@ -165,9 +211,10 @@ nav a:active {
 }
 /* the sublinks container of the individual navlinks */
 .sublink {
+  border: solid 1px;
   position: absolute;
   width: 170px;
-  top: calc(var(--nav-bar-height) - 35px);
+  top: calc(var(--nav-bar-height) - 40px);
   right: 0;
   border: solid;
   text-align: center;
@@ -220,13 +267,16 @@ header > div {
   background-color: var(--header-bg-overlay);
 }
 /* header paragraph */
-header h1 {
-  padding: 20px 30px;
+header h2 {
+  /* padding: 20px 30px; */
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+}
+header h2, header h4{
+  margin: 0 20px;
 }
 /* company about and contact container */
 main > .company-about,
@@ -464,7 +514,7 @@ footer i {
     padding: 10px 0;
   }
   .sublink {
-    top: 25px;
+    top: 15px;
   }
   .sublink:last-child {
     right: -10px;
