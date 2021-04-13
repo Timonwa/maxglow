@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: zilla, monospace;
 
   /* variables */
   --main-bg: rgb(238, 238, 238);
@@ -21,6 +22,8 @@
   --sub-company-bg: rgba(0, 0, 0, 0.596);
   --footer-bg: rgb(56, 133, 82);
   --footer-color: rgb(0, 0, 0);
+
+  @import url();
 }
 /* reseting the link states to black and no decoration */
 a,
@@ -256,23 +259,23 @@ main > .company-about,
   width: 305px;
   box-shadow: 0 3px 15px grey;
 }
-/* genius company */
-.genius {
-  background-image: url(img/genius-img/magazine.jpg);
+/* mgmag company */
+.mgmag {
+  background-image: url(img/mgmag-img/magazine.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 /* royal beads company */
-.royalbeads {
-  background-image: url(img/royalbeads-img/beads-hung-on-pole.jpg);
+.mgjewelery {
+  background-image: url(img/mgjewelery-img/beads-hung-on-pole.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* acwf company */
-.acwf {
-  background-image: url(img/acwf-img/charity-food-sharing.jpg);
+/* mgngo company */
+.mgngo {
+  background-image: url(img/mgngo-img/charity-food-sharing.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

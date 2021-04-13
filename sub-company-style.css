@@ -89,13 +89,13 @@ section {
   width: auto;
   height: 300px;
 }
-.royalbeads-description {
+.mgjewelery-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.royalbeads-description .royalbeads-service {
+.mgjewelery-description .mgjewelery-service {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -103,19 +103,19 @@ section {
   align-items: center;
   padding: 0 50px;
 }
-.royalbeads-service * {
+.mgjewelery-service * {
   width: 50%;
   height: 240px;
   padding: 20px;
 }
-.royalbeads-description .royalbeads-service figcaption {
+.mgjewelery-description .mgjewelery-service figcaption {
   text-align: end;
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.royalbeads-description .royalbeads-service img {
+.mgjewelery-description .mgjewelery-service img {
   width: 100%;
   padding: 0;
   height: 200px;
@@ -125,14 +125,14 @@ section {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
 }
-.acwf-description .acwf-service {
+.mgngo-description .mgngo-service {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.acwf-description .acwf-service img {
+.mgngo-description .mgngo-service img {
   width: auto;
   height: 300px;
   padding: 15px;
@@ -191,7 +191,7 @@ section {
 #advert p {
   text-align: justify;
 }
-.genius-advert{
+.mgmag-advert{
   border-top: solid 2px var(--nav-bar-bg);
 }
 #members > .members {
@@ -394,29 +394,29 @@ address {
     flex-direction: column;
     text-align: center;
   }
-  .genius-about-img img{
+  .mgmag-about-img img{
     width: 80%;
     height: auto;
   }
-  .royalbeads-description .royalbeads-service {
+  .mgjewelery-description .mgjewelery-service {
     flex-direction: column;
     margin: 10px 0;
   }
-  .royalbeads-service *{
+  .mgjewelery-service *{
     width: 100%;
   }
-  .royalbeads-description .royalbeads-service figcaption {
+  .mgjewelery-description .mgjewelery-service figcaption {
     font-weight: bold;
     height: auto;
     justify-content: center;
     padding: 10px 0 10px;
     text-align: center;
   }
-  .royalbeads-service div{
+  .mgjewelery-service div{
     padding: 0;
     height: 200px;
   }
-  .royalbeads-description .royalbeads-service img {
+  .mgjewelery-description .mgjewelery-service img {
     height: 200px;
     width: 250px;
     border-radius: 50px;
@@ -425,7 +425,7 @@ address {
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
   }
-  .acwf-description .acwf-service img {
+  .mgngo-description .mgngo-service img {
     width: 300px;
     height: auto;
     padding: 15px;
