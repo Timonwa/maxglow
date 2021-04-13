@@ -145,9 +145,6 @@ section {
   padding: 15px;
 }
 /* gallery */
-#gallery *{
-  /* border: solid; */
-}
 #gallery {
   padding: var(--section-container-padding);
   background: #fff;
