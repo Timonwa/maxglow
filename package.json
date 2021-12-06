@@ -1,0 +1,23 @@
+{
+  "name": "maxglow",
+  "version": "1.0.0",
+  "description": "This is a static 4-page website made for a client to showcase their different businesses.\r The first page which is the main/home page shows the main company details and has links to the other 3 companies or sub-companies/businesses run by the owner.\r The other 3 pages all contain details also of the individual sub-companies including a picture gallery and a section that shows the members of the company/business.",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Timonwa/website-for-princess.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Timonwa/website-for-princess/issues"
+  },
+  "homepage": "https://github.com/Timonwa/website-for-princess#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  }
+}
